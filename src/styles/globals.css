@@ -17,17 +17,37 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  @apply bg-gray-100;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+select{
+  @apply focus:outline-none;
+  @apply border-2;
+  @apply rounded;
+  @apply bg-white;
+  @apply border-gray-400;
+  @apply focus:border-primary-400;
+  @apply disabled:bg-gray-200;
+  @apply disabled:cursor-not-allowed;
+}
+
+input, textarea{
+  @apply focus:outline-none;
+  @apply border-2;
+  @apply rounded;
+  @apply bg-white;
+  @apply border-gray-400;
+  @apply focus:border-primary-400;
+  @apply disabled:bg-gray-200;
+  @apply disabled:cursor-not-allowed;
+}
+
+button {
+  @apply focus:outline-none;
+}
+
+.datetime > input {
+  @apply w-full;
+  @apply h-full;
+  @apply p-2;
 }
