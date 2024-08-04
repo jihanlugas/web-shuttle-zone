@@ -1,6 +1,6 @@
 import 'react-notifications-component/dist/theme.css'
 import 'animate.css/animate.min.css';
-import 'react-calendar-timeline/lib/Timeline.css'
+import '@jihanlugas/react-calendar-timeline/lib/Timeline.css'
 import '@/styles/globals.css'
 import '@/styles/react-calendar-timeline.css'
 import Head from 'next/head';
